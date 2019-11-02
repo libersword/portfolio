@@ -1,0 +1,99 @@
+body {
+  height: 100vh;
+  width:100%;
+  margin:0;
+  overflow: hidden;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 0%, #58508d 97%, #58508d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #1e5799 0%,#58508d 97%,#58508d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #1e5799 0%,#58508d 97%,#58508d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#58508d',GradientType=0 ); /* IE6-9 */
+}
+
+.intro-text{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.intro-text h1{
+color: #FFFFEF;
+font-family: 'Montserrat', san-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.intro-text h2 {
+color: #FFFFEF;
+font-family: 'input-serif', serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.links {
+  display: flex;
+  margin: 0;
+}
+
+.port-links{
+  width: 80%;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.port-links li{
+  list-style: none;
+  display:inline-flex;
+}
+
+:root {
+  --mainColor: #BB5390;
+}
+
+.port-links a {
+font-family: 'Montserrat', san-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 20px;
+color: #FFFFEF;
+padding: 8px;
+text-decoration: underline double #BB5390;
+background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+.port-links a:hover {
+  background-size: 4px 50px;
+}
+
+@media only screen and (max-width: 600px){
+  .intro-text{
+    margin: 0;
+    text-align:center;
+    padding: 10px;
+  }
+  .port-links{
+      width: 100%;
+      padding: 20px;
+      align-items: center;
+      flex-wrap:wrap;
+  }
+  .port-links li{
+    list-style: none;
+    display:flex;
+  }
+}
