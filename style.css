@@ -1,8 +1,8 @@
+html,
 body {
-  height: 100vh;
+  min-height: 100%;
   width:100%;
   margin:0;
-  overflow: hidden;
   background: #1e5799; /* Old browsers */
   background: -moz-linear-gradient(top,  #1e5799 0%, #58508d 97%, #58508d 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #1e5799 0%,#58508d 97%,#58508d 100%); /* Chrome10-25,Safari5.1-6 */
@@ -95,5 +95,8 @@ background:
   .port-links li{
     list-style: none;
     display:flex;
+
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }

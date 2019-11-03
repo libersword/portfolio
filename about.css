@@ -1,0 +1,62 @@
+.about-me h1{
+color: #FFFFEF;
+font-family: 'Montserrat', san-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.about-me h3,
+.about-me p {
+color: #FFFFEF;
+font-family: 'input-serif', serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.about-row {
+  margin: 20px;
+  flex-wrap:wrap;
+}
+
+.about {
+  display: flex;
+  width: 80%;
+  padding: 15px;
+}
+
+.about-me {
+  flex: 1 1 auto;
+  align-self:flex-end;
+}
+
+.about-img {
+  min-width: 375px;
+  height: 375px;
+  align-self: flex-start;
+  margin-right: 15px;
+}
+#me {
+  background-image: url('assets/me.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.port-links{
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 768px){
+  .about-img {
+    min-width: 275px;
+  }
+  .about {
+    display: block;
+    width:100%;
+  }
+  #me {
+    background-size: contain;
+  }
+}

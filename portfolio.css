@@ -1,0 +1,103 @@
+.port-row {
+  margin: 0 20px 0 20px;
+  flex-wrap: wrap;
+}
+
+.portfolio {
+  display: flex;
+  width: 50%;
+  padding: 15px;
+}
+
+.portfolio-text {
+  flex: 1 1 auto;
+  align-self: flex-end;
+}
+
+.port-img {
+  min-width: 450px;
+  min-height: 350px;
+  align-self: flex-start;
+  margin-right: 15px;
+}
+
+.portfolio-title {
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: #FFFFEF;
+}
+
+.portfolio-desc {
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFEF;
+}
+
+.port-btn {
+  background-color: #BB5390;
+  border: none;
+  width: 50%;
+  text-align: center;
+  color: #FFFFEF;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1250px){
+  .port-img{
+    min-height: 275px;
+    height: 275px;
+  }
+  .portfolio-title{
+    font-size: 18px;
+  }
+  .portfolio-desc {
+    font-size: 14px;
+  }
+}
+
+#p1 {
+  background-image: url('assets/shows-in-denver.png');
+  background-size: cover;
+  background-position:left center;;
+}
+#p2 {
+  background-image: url('assets/code-quiz.png');
+  background-size: cover;
+  background-position:left center;
+}
+#p3 {
+  background-image: url('assets/day-planner.png');
+  background-size: cover;
+  background-position:left enter;
+}
+#p4 {
+  background-image: url('assets/weather-app.png');
+  background-size: cover;
+  background-position: left center;
+}
+
+@media only screen and (max-width: 1250px){
+  .port-img{
+    min-width: 275px;
+    height: 275px;
+  }
+  .portfolio-title{
+    font-size: 32px;
+  }
+  .portfolio-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .portfolio{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .portfolio{
+    display:block;
+  }
+}
