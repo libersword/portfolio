@@ -1,0 +1,38 @@
+.contact-form {
+  width:100%;
+  margin-top: 15px;
+}
+.contact-form .textarea {
+  min-height: 220px;
+  resize: none;
+}
+.form-control {
+  box-shadow: none;
+  border-color: #eee;
+  height: 49px;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BB5390;
+}
+.form-control-feedback {
+  line-height: 50px;
+}
+.main-btn {
+  background: #BB5390;
+  border-color: #BB5390;
+  color: #fff;
+}
+.main-btn:hover {
+  background: #BB5390;
+  color: #fff;
+}
+.form-control-feedback {
+  line-height: 50px;
+  top: 0px;
+}
+
+.port-links{
+  margin-left: 40px;
+}
+

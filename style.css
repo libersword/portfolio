@@ -10,6 +10,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#58508d',GradientType=0 ); /* IE6-9 */
 }
 
+* {
+  box-sizing: inherit;
+}
+
 .intro-text{
   display: flex;
   flex-direction: column;
