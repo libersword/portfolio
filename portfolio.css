@@ -42,6 +42,8 @@
   text-align: center;
   color: #FFFFEF;
   font-weight: 500;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .port-links{
