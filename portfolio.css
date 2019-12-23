@@ -83,7 +83,12 @@
   background-size: cover;
   background-position: left center;
 }
-
+#p5 {
+  background-image: url('assets/burgerTime.png');
+  background-size: cover;
+  background-position: left center;
+}
+  
 @media only screen and (max-width: 1250px){
   .port-img{
     min-width: 275px;
