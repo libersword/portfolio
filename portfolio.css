@@ -6,8 +6,9 @@
 .portfolio {
   display: flex;
   width: 50%;
-  padding: 15px;
+  padding: 30px;
   box-sizing: border-box;
+  z-index: 0;
 }
 
 .portfolio-text {
@@ -16,46 +17,180 @@
 }
 
 .port-img {
-  min-width: 450px;
-  min-height: 350px;
-  align-self: flex-start;
-  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 150px;
+  min-height: 150px;
+  background: white;
+  border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+.port-img:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.port-img:hover:before,
+.port-img:hover:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #bb5390;
+  border-radius: 50%;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.port-img:hover:after {
+  background: #ffffef;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
 }
 
 .portfolio-title {
   font-size: 24px;
-  line-height: 40px;
+  line-height: 30px;
   margin-bottom: 10px;
-  color: #FFFFEF;
+  color: #ffffef;
+  margin-left: 10px;
 }
 
 .portfolio-desc {
   font-size: 16px;
-  line-height: 32px;
-  color: #FFFFEF;
+  line-height: 22px;
+  color: #ffffef;
+  margin-left: 10px;
 }
 
-.port-btn {
-  background-color: #BB5390;
-  border: none;
-  width: 50%;
-  text-align: center;
-  color: #FFFFEF;
-  font-weight: 500;
-  width: 100%;
-  margin-bottom: 10px;
+.port-buttons {
+  display: flex;
 }
 
-.port-links{
+p {
+  margin-bottom: 0;
+}
+
+:root {
+  --mainColor: #BB5390;
+}
+
+.port-buttons a {
+  background-color: transparent;
+font-family: 'Montserrat', san-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 14px;
+color: #FFFFEF;
+padding: 8px;
+text-decoration: underline double #BB5390;
+background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size .2s;
+  margin:10px;
+}
+
+.port-buttons a:hover {
+  background-size: 4px 50px;
+}
+
+.port-links {
   margin-left: 40px;
 }
 
-@media only screen and (max-width: 1250px){
-  .port-img{
-    min-height: 275px;
-    height: 275px;
-  }
-  .portfolio-title{
+@media only screen and (max-width: 1250px) {
+  .portfolio-title {
     font-size: 18px;
   }
   .portfolio-desc {
@@ -64,37 +199,42 @@
 }
 
 #p1 {
-  background-image: url('assets/shows-in-denver.png');
+  background-image: url("assets/shows-in-denver.png");
   background-size: cover;
-  background-position:left center;;
+  background-position: center center;
 }
 #p2 {
-  background-image: url('assets/code-quiz.png');
+  background-image: url("assets/code-quiz.png");
   background-size: cover;
-  background-position:left center;
+  background-position: center center;
 }
 #p3 {
-  background-image: url('assets/day-planner.png');
+  background-image: url("assets/day-planner.png");
   background-size: cover;
-  background-position:left enter;
+  background-position: center center;
 }
 #p4 {
-  background-image: url('assets/weather-app.png');
+  background-image: url("assets/weather-app.png");
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
 #p5 {
-  background-image: url('assets/burgerTime.png');
+  background-image: url("assets/burgerTime.png");
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
-  
-@media only screen and (max-width: 1250px){
-  .port-img{
-    min-width: 275px;
-    height: 275px;
+#p6 {
+  background-image: url("assets/pigeonhole.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+@media only screen and (max-width: 1250px) {
+  .port-img {
+    width: 150px;
+    height: 150px;
   }
-  .portfolio-title{
+  .portfolio-title {
     font-size: 32px;
   }
   .portfolio-text {
@@ -102,14 +242,17 @@
   }
 }
 
-@media only screen and (max-width: 1000px){
-  .portfolio{
+@media only screen and (max-width: 1000px) {
+  .portfolio {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 500px){
-  .portfolio{
-    display:block;
+@media only screen and (max-width: 500px) {
+  .portfolio {
+    display: block;
+  }
+  .port-img {
+    margin-bottom: 20px;
   }
 }
