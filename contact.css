@@ -36,3 +36,13 @@
   margin-left: 40px;
 }
 
+.contact-row{
+  margin: 20px;
+  flex-wrap:wrap;
+  color:white;
+}
+.contact-row a{
+  color:white;
+  text-decoration: none;
+}
+
